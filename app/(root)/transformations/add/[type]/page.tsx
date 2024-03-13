@@ -3,7 +3,7 @@ import TransformationForm from '@/components/shared/TransformationForm'
 import { transformationTypes } from '@/constants'
 import { getUserById } from '@/lib/actions/user.actions'
 import { auth } from '@clerk/nextjs'
-import { redirect } from 'next/dist/server/api-utils'
+import { redirect } from 'next/navigation';
 
 const AddtransformationTypePage = async({params:{type}}: SearchParamProps) => {
   const { userId} = auth()
