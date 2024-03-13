@@ -36,7 +36,7 @@ import { InsufficientCreditsModal } from "./InsufficientCreditsModal"
 
 export const formSchema = z.object({
   title: z.string(),
-  aspecRatio:z.string().optional(),
+  aspectRatio:z.string().optional(),
   color:z.string(),
   prompt:z.string(),
   pbulicId:z.string(),
