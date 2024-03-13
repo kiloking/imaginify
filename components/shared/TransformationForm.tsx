@@ -33,7 +33,8 @@ import { getCldImageUrl } from "next-cloudinary"
 import { addImage, updateImage } from "@/lib/actions/image.actions"
 import { useRouter } from "next/navigation"
 import { InsufficientCreditsModal } from "./InsufficientCreditsModal"
-const formSchema = z.object({
+
+export const formSchema = z.object({
   title: z.string(),
   aspecRatio:z.string().optional(),
   color:z.string(),
