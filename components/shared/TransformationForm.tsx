@@ -39,7 +39,7 @@ export const formSchema = z.object({
   aspectRatio:z.string().optional(),
   color:z.string(),
   prompt:z.string(),
-  pbulicId:z.string(),
+  publicId:z.string(),
 
 })
 
